@@ -1,0 +1,19 @@
+Step 1:
+convert geojson into an image with the same size of the input image
+
+Step 2:
+extract pixel coordinates from the converted image and create the csv
+- can be done using python
+
+
+1. get image, find top left and bottom right geocoords in it
+2. calc all possible geolocation x-y points in the image
+3. search general geojson file to find every poss bounding box within the image
+4. for all bounding boxes found, save them in a new geojson file for that image
+5. convert geocoords from each bounding box to pixel x-y coords
+6. save in json file
+
+read it 1 uuid at a time, if they are within image coords, save it to a new geojson file as the uuid object?
+
+
+
